@@ -535,7 +535,8 @@ void VerificarReservas(reserva &r) {
         break; // Asegurarse de que no se exceda la hora límite de 17.
       bool bloqueDisponible = true;
       for (int j = i; j < i + 2; ++j) {
-        if (j > horaFinal - 1 || personasEnHora(j) + r.cantFamiliares > totalPersonas) {
+        if (j > horaFinal - 2 ||
+            personasEnHora(j) + r.cantFamiliares > totalPersonas) {
           bloqueDisponible = false;
           break;
         }
@@ -560,7 +561,8 @@ void VerificarReservas(reserva &r) {
   } else {
     bool espacioDisponible = true;
     for (int i = r.horaInicio; i < r.horaInicio + 2; ++i) {
-      if (i > horaFinal - 1 || personasEnHora(i) + r.cantFamiliares > totalPersonas) {
+      if (i > horaFinal - 2 ||
+          personasEnHora(i) + r.cantFamiliares > totalPersonas) {
         espacioDisponible = false;
         break;
       }
