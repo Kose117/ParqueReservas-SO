@@ -1,5 +1,9 @@
 # Proyecto2_SOP
 
+## Documentación
+
+📄 [Ver documentación del proyecto](Proyecto-II-2023-ParqueFinal.pdf)
+
 ## Compilación
 ```bash
 g++ -o controlador ControladorReservas.cpp
