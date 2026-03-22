@@ -1,1 +1,10 @@
 # Proyecto2_SOP
+
+g++ -o controlador ControladorReservas.cpp
+g++ -o AgenteReservas AgenteReservas.cpp
+g++ -o AgenteReservas2 AgenteReservas2.cpp
+g++ -o AgenteReservas3 AgenteReservas3.cpp
+./controlador -i 7 -f 19 -s 5 -t 20 -p pipecrecibe
+./AgenteReservas -s hola -a datosAgente1.txt -p pipecrecibe
+./AgenteReservas2 -s mirame -a datosAgente2.txt -p pipecrecibe
+./AgenteReservas3 -s bebe -a datosAgente3.txt -p pipecrecibe
